@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(60, 69%, 54%);
+  color: hsl(218, 44%, 22%);
+  font-size: 15px;
+  line-height: 1.6;
+  height: 100vh; /* Ensure the body takes up the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  position: relative; /* So the attribution can be absolutely positioned */
+}
+
+/* Card styling */
+.card {
+  background-color: white;
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  text-align: left;
+  position: relative; /* For any future positioning inside the card */
+  box-shadow: 10px 10px;
+}
+
+img {
+  padding: 16px 16px;
+  border-radius: 30px;
+  width: 100%;
+  height: 60%; /* Adjust the height to fit the card size */
+  object-fit: cover; /* Ensures the image covers the area proportionally */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 4px 16px;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  
+}
+
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button1 {background-color:hsl(60, 69%, 54%); color: black;border: 2px solid black;border-radius:2px}
+/* Attribution section */
+
+p{
+  font-size: small;
+}
+.p1 {
+  color: black;
+}
+
+.chip {
+  display: inline-block;
+  padding: 4px 16px;
+  height: 50px;
+  font-size: 12px;
+  line-height: 60px;
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.name {
+  margin: 0 10px 0 -15px;
+}
+
+h4:hover{
+  color:hsl(60, 69%, 54%);
+  cursor: pointer;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+  position: absolute;
+  bottom: 10px; /* Pushes it 10px from the bottom of the page */
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="assets/images/illustration-article.svg" alt="Avatar" style="width:100%">
+    <div class="container">
+      <div><button class="button button1"><strong>Learning</strong></button></div>
+      <p class="p1">Published 22 Oct 2024</p>
+      <h4><b>HTML & CSS foundations</b></h4>
+      <p>These languages are the backbone of every website,defining structure,content,and presentation</p>
+      <div class="chip">
+        <img src="assets/images/image-avatar.webp" alt="Person" width="96" height="96"> <strong class="name">Greg Hooper</strong>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Muhammed Hasan Misba</a>.
+  </div>
+</body>
+</html>
