@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.location {
+  color: #b0ff00;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.bio {
+  font-size: 0.85rem;
+  color: #b3b3b3;
+  margin-bottom: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn {
+  background-color: #333;
+  color: #ffffff;
+  padding: 0.8rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+    position: absolute;
+    bottom: 10px; /* Pushes it 10px from the bottom of the page */
+    left: 0;
+    right: 0;
+    padding: 0.5rem;
+  }
+  
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
